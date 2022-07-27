@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="mainContainer">
+
+        <div>
+            <label id="dt">Please Enter your details</label><br></br>
+            <label id="nm">Name: </label><br></br>
+            <textarea type="text" id="user_name" name="user_name"></textarea><br></br>
+            <label id="em">Email: </label><br></br>
+            <textarea type="email" id="user_email" name="user_email" ></textarea><br></br>
+            <label id="ad">Aadhar card: </label><br></br>
+            <textarea type="text" id="aadhar" name="aadhar" minLength="12"></textarea><br></br>
+        </div>
+        
+        <label id="dt2">Questions</label><br></br>
+        
+        <div class="question1">
+            <label class="ques">Why you want to join NCR?</label><br>
+            <textarea name="ans1" id="ans1" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="question2">
+            <label class="ques">What do you know about NCR?</label><br>
+            <textarea name="ans2" id="ans2" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="question3">
+            <label class="ques">Why you took computer science?</label><br>
+            <textarea name="ans3" id="ans3" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="question4">
+            <label class="ques">Which you think is your best skill?</label><br>
+            <textarea name="ans4" id="ans4" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="question5">
+            <label class="ques">How can you contribute to NCR?</label><br>
+            <textarea name="ans5" id="ans5" cols="50" rows="10"></textarea>
+        </div>
+
+        <button id="submit" onclick="submit()" type="button">Submit</button>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <!-- <script type="module" src="./index.js"> -->
+    </script>
+</body>
+</html>
